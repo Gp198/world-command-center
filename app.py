@@ -25,12 +25,12 @@ st.set_page_config(
 
 FLAGS = {
     "Portugal": "🇵🇹", "Brazil": "🇧🇷", "France": "🇫🇷", "Argentina": "🇦🇷", "Spain": "🇪🇸",
-    "England": "🏴", "Germany": "🇩🇪", "Netherlands": "🇳🇱", "USA": "🇺🇸", "Mexico": "🇲🇽",
+    "England": "UK", "Germany": "🇩🇪", "Netherlands": "🇳🇱", "USA": "🇺🇸", "Mexico": "🇲🇽",
     "Japan": "🇯🇵", "Morocco": "🇲🇦", "Canada": "🇨🇦", "Italy": "🇮🇹", "Uruguay": "🇺🇾",
     "Belgium": "🇧🇪", "Croatia": "🇭🇷", "Colombia": "🇨🇴", "Switzerland": "🇨🇭", "Denmark": "🇩🇰",
     "Senegal": "🇸🇳", "Austria": "🇦🇹", "Australia": "🇦🇺", "Iran": "🇮🇷", "Korea Republic": "🇰🇷",
     "South Africa": "🇿🇦", "Czechia": "🇨🇿", "Nigeria": "🇳🇬", "Egypt": "🇪🇬", "Ghana": "🇬🇭",
-    "Turkey": "🇹🇷", "Poland": "🇵🇱", "Norway": "🇳🇴", "Scotland": "🏴", "Wales": "🏴",
+    "Turkey": "🇹🇷", "Poland": "🇵🇱", "Norway": "🇳🇴", "Scotland": "SCO", "Wales": "WL",
     "Serbia": "🇷🇸", "Ecuador": "🇪🇨", "Paraguay": "🇵🇾", "Chile": "🇨🇱", "Peru": "🇵🇪",
     "Qatar": "🇶🇦", "Saudi Arabia": "🇸🇦", "Tunisia": "🇹🇳", "Algeria": "🇩🇿", "Cameroon": "🇨🇲",
     "Costa Rica": "🇨🇷", "Panama": "🇵🇦", "Jamaica": "🇯🇲", "New Zealand": "🇳🇿"
@@ -333,7 +333,7 @@ def sidebar() -> str:
         <div class="status-row"><span><span class="dot"></span>48-Team Data Layer</span><strong>Active</strong></div>
         <div class="status-row"><span><span class="dot"></span>Mistral Chief Analyst</span><strong>{mistral_state}</strong></div></div>
         """, unsafe_allow_html=True)
-        st.caption(f"Local build · {datetime.now().strftime('%Y-%m-%d')}")
+        st.caption(f"Made by: Gonçalo Pedro · {datetime.now().strftime('%Y-%m-%d')}")
     return page
 
 
