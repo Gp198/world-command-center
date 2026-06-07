@@ -1,5 +1,7 @@
 # 🏆 World Cup Intelligence Center 2026
 
+![Architecture](Arquitecture.png)
+
 An AI-powered football intelligence platform that combines predictive analytics, tournament simulation, multi-agent reasoning, and LLM-driven strategic analysis to generate actionable insights for FIFA World Cup scenarios.
 
 ---
