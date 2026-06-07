@@ -1,57 +1,255 @@
-# World Cup Command Center 2026
+# 🏆 World Cup Intelligence Center 2026
 
-A zero-cost, local-first football intelligence platform for the FIFA World Cup 2026.
+An AI-powered football intelligence platform that combines predictive analytics, tournament simulation, multi-agent reasoning, and LLM-driven strategic analysis to generate actionable insights for FIFA World Cup scenarios.
 
-## Final build included
+---
 
-- 48-team realistic data layer
-- Match Predictor
-- Full 48-team tournament simulation
-- 100,000 Monte Carlo simulation mode
-- Real multi-agent intelligence layer
-- Mistral Chief Analyst
-- Ask the Coach strategic module
-- What-if scenarios
-- Data Sources page
+## 📖 Overview
 
-## Multi-Agent Intelligence Layer
+**World Cup Intelligence Center 2026** is an end-to-end football analytics platform designed to simulate, analyze, and explain World Cup outcomes using advanced AI and data-driven methodologies.
 
-Specialist agents run before the Chief Analyst:
+The platform integrates:
 
-```text
-Stats Agent
-Scout Agent
-Tactical Agent
-Player Agent
-News Agent
-Debate Agent
-        ↓
-Chief Analyst — Mistral Medium
-        ↓
-World Cup Executive Briefing
+* 📊 Predictive Analytics
+* ⚽ Elo Ratings
+* 🌍 FIFA Rankings
+* 📈 Historical Performance Data
+* 🤖 Multi-Agent AI Architecture
+* 🧠 Mistral AI Reasoning
+* 🎲 Tournament Simulation Engine
+* 🎯 Strategic Coaching Analysis
+
+The goal is to provide executive-level football intelligence similar to the analytical capabilities used by modern sports organizations and performance departments.
+
+---
+
+## 🚀 Key Features
+
+### ⚽ Match Predictor
+
+Predicts the outcome of any international football match using multiple performance indicators.
+
+#### Inputs
+
+* Elo Ratings
+* FIFA Rankings
+* Team Strength Metrics
+* Historical Performance Data
+* Expected Goals (xG) Indicators
+
+#### Outputs
+
+* Home Win Probability
+* Draw Probability
+* Away Win Probability
+
+---
+
+### 🏆 Tournament Intelligence
+
+Simulates the complete FIFA World Cup tournament structure from group stages to the final.
+
+#### Features
+
+* Group Stage Simulation
+* Knockout Stage Progression
+* Qualification Probability Analysis
+* Tournament Forecasting
+
+---
+
+### 🤖 Multi-Agent Intelligence Center
+
+The platform leverages specialized AI agents, each focused on a specific analytical domain.
+
+#### 📊 Stats Agent
+
+Analyzes:
+
+* Elo Ratings
+* FIFA Rankings
+* Team Form
+* Expected Goals Metrics
+
+#### 🔍 Scout Agent
+
+Analyzes:
+
+* Team Strengths
+* Squad Depth
+* Key Player Impact
+
+#### 🎯 Tactical Agent
+
+Analyzes:
+
+* Tactical Matchups
+* Playing Styles
+* Strategic Advantages and Weaknesses
+
+#### 📰 News Agent
+
+Analyzes:
+
+* Injuries
+* Suspensions
+* Recent Team Developments
+
+#### ⚖️ Debate Agent
+
+Challenges assumptions, evaluates alternative scenarios, and identifies potential blind spots in predictions.
+
+#### 🧠 Chief Analyst
+
+Powered by **Mistral AI**.
+
+Generates:
+
+* Executive Briefings
+* Match Intelligence Reports
+* Strategic Recommendations
+
+---
+
+### 🎙️ Ask the Coach
+
+Interactive football reasoning module powered by AI.
+
+#### Example Questions
+
+* What is Portugal's most likely path to the final?
+* Which team is the biggest dark horse of the tournament?
+* What happens if Mbappé misses the quarter-finals?
+* How would Portugal perform without Cristiano Ronaldo?
+
+---
+
+### 🎲 Monte Carlo Simulation Engine
+
+Runs large-scale tournament simulations to estimate probabilities and forecast outcomes.
+
+#### Example Results
+
+| Team     | Chance to Win |
+| -------- | ------------- |
+| France   | 18.4%         |
+| Portugal | 16.7%         |
+| Brazil   | 15.2%         |
+
+---
+
+## 🏗️ Architecture
+
+### Prediction Layer
+
+* Elo Rating Engine
+* FIFA Ranking Engine
+* Expected Goals (xG) Projection Engine
+
+### Multi-Agent Layer
+
+* Stats Agent
+* Scout Agent
+* Tactical Agent
+* News Agent
+* Debate Agent
+
+### Reasoning Layer
+
+* Mistral AI Chief Analyst
+
+### Presentation Layer
+
+* Streamlit User Interface
+* Executive Dashboards
+* Strategic Reports
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+* Streamlit
+
+### Artificial Intelligence
+
+* Mistral AI
+* Multi-Agent Architecture
+
+### Data Sources
+
+* FIFA Rankings
+* Elo Ratings
+* Historical Match Results
+* Team Intelligence Datasets
+
+### Analytics & Machine Learning
+
+* Pandas
+* NumPy
+* Scikit-Learn
+
+---
+
+## ⚙️ Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/world-cup-intelligence-center.git
+cd world-cup-intelligence-center
 ```
 
-The orchestration is implemented locally and is LangGraph/CrewAI/AutoGen-ready through the contract in `frameworks/langgraph_ready_orchestration.py`.
+### Install Dependencies
 
-## Run locally
-
-```cmd
-python -m venv .venv
-.venv\Scripts\activate
+```bash
 pip install -r requirements.txt
-set MISTRAL_API_KEY=your_key
-set MISTRAL_MODEL=mistral-medium-latest
+```
+
+### Configure Environment Variables
+
+```bash
+export MISTRAL_API_KEY="your_api_key"
+export MISTRAL_MODEL="mistral-medium-latest"
+```
+
+### Run the Application
+
+```bash
 streamlit run app.py
 ```
 
-Without `MISTRAL_API_KEY`, the app still works with deterministic local analysis.
+---
 
-## Ask the Coach examples
+## 🔮 Future Roadmap
 
-- What is Portugal's most likely path to the final?
-- Which team is the biggest dark horse?
-- What happens if Mbappé misses the quarter-finals?
+### Phase 7 — Production Readiness
 
-## Data strategy
+* Docker Deployment
+* CI/CD Pipelines
+* Monitoring & Observability
+* Automated Data Refresh
 
-The app uses realistic local caches for FIFA ranking, Elo ratings, historical results and players. SofaScore is optional/cache-first and not required for the demo.
+### Phase 8 — Live Data Integration
+
+* Real-Time Match Events
+* Injury Monitoring
+* Squad Updates
+* Dynamic Tournament Forecasting
+
+### Phase 9 — Agentic Football Operations Center
+
+* Autonomous Scouting Agents
+* Continuous Tournament Monitoring
+* Automated Briefing Generation
+* Advanced Strategic Decision Support
+
+---
+
+## 👨‍💻 Author
+
+**Gonçalo Pedro**
+*AI Tech Lead*
+
+Building AI-powered decision systems, multi-agent platforms, and intelligent analytics solutions.
